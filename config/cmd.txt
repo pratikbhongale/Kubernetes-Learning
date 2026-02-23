@@ -1,0 +1,4 @@
+After creating a config file 
+to create a cluster using following command
+kind create cluster --name pratik-cluster --config config.yml
+give a name to the cluster then --config from the file
