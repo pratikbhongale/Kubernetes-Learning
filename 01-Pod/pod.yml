@@ -1,8 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-first-pod
-spec:
+  name: nginx-pod
+  labels:
+    app: web
+    env: dev
+spec:  #spec will contain what to run
   containers:
     - name: nginx-container
       image: nginx
+      ports:
+        - containerPort: 80
+
