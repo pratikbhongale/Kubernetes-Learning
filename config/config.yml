@@ -8,8 +8,6 @@ nodes:
   image: kindest/node:v1.31.9
 - role: worker
   image: kindest/node:v1.31.9
-- role: worker
-  image: kindest/node:v1.31.9
   #cluster will run inside a container so we have to give extra port mappings....
   extraPortMappings:
   - containerPort: 80
