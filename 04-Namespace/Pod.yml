@@ -1,11 +1,11 @@
-apiVersion: v1
 kind: Pod
+apiVersion: v1
 metadata:
-  name: nginx-dev
+  name: nginx-prod
   namespace: dev
 spec:
   containers:
-  - name: nginx-dev-container
+  - name: nginx-prod-container
     image: nginx
-    ports:
+    ports: 
     - containerPort: 80
