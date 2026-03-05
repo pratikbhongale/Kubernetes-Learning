@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service-nodeport
+  name: nginx-auto-ip-service
 spec:
   type: NodePort
   selector:
@@ -9,4 +9,3 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30007
