@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes app</title>
+</head>
+<body>
+    <h1>Notes app Frontend</h1>
+    <p> kubernetes Demo Project</p>
+    <button onclick="getBackend()">Check Backend</button>
+    <p id="result"></p>
+    <script>
+        async function getBackend(){
+            const response = await fetch("http://backend-service:5000");
+            const data = await response.text();
+            document.getElementById("result").innerText = data;
+        }
+    </script>
+    
+</body>
+</html>
