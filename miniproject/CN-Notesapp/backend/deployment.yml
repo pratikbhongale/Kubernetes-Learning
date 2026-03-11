@@ -10,7 +10,7 @@ spec:
       app: backend
   template:
     metadata:
-      selector:
+      labels:
         app: backend
     spec:
       containers:
