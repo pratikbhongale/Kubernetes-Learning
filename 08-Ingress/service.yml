@@ -1,0 +1,13 @@
+#Ingress works with clusterIp, not nodeport
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  namespace: nginx
+spec:
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
